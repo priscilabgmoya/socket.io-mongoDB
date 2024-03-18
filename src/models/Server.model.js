@@ -44,6 +44,7 @@ import path from 'path';
         this.server.listen(this.server.PORT, ()=> {
             console.log("hello word");
             console.log(`listening in the port ${this.server.PORT}`);
+            console.log(`http://localhost:${this.server.PORT}/`);
         })
     }
     getServer(){
