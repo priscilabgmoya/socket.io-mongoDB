@@ -1,4 +1,4 @@
-import { allNote, postNote } from "../src/service/note.service.js";
+import { allNote, postNote } from "../service/note.service.js";
 
 export const getAllNotes = async (serverSocket) =>{
     const {data,error} = await allNote(); 

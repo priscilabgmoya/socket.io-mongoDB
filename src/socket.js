@@ -1,4 +1,4 @@
-import { getAllNotes, saveNotes } from "../controller/socket.controller.js";
+import { getAllNotes, saveNotes } from "./controller/socket.controller.js";
 
 export default (serverSocket) => {
     //Escuchamos el evento de connection
