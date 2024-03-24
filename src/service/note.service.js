@@ -29,7 +29,27 @@ const postNote = async(note) =>{
         return {error: error};
     }
 }
-
+const deleteNote = async (id) =>{
+    debugger
+    try {
+        const response = await Note.findOneAndDelete(id); 
+        return {data : response}; 
+    } catch (error) {
+        console.log(error);
+        return {error: error};
+    }
+}
+const getOneNote = async (id) =>{
+    debugger
+    try {
+        const response = await Note.findById(id); 
+        console.log(response);
+        return {data : response}; 
+    } catch (error) {
+        console.log(error);
+        return {error: error};
+    }
+}
 export{
-    allNote,postNote
+    allNote,postNote,deleteNote,getOneNote
 }
